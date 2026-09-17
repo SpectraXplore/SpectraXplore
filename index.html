@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpectraXplore™ — AI/ML Decision Intelligence for Mineral Exploration</title>
+<meta name="description" content="SpectraXplore™ is an advanced AI/ML-based remote sensing decision intelligence platform for mineral exploration — fusing hyperspectral analysis, multi-physics geophysical inversion (gravity, EM, magnetics), and deep learning models including multiscale GCN, CNN, Bi-CLSTM and Bayesian prospectivity to generate ranked drilling targets.">
+<link rel="icon" type="image/png" href="./assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- =========================================================
+     NAV
+     ========================================================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img src="./assets/logo-icon.png" alt="SpectraXplore logo">
+      <span class="brand-word">Spectra<b>Xplore</b>™</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#platform">Platform</a></li>
+      <li><a href="#workflow">Workflow</a></li>
+      <li><a href="#ai-engine">AI/ML Engine</a></li>
+      <li><a href="#library">Mineral Library</a></li>
+      <li><a href="#action">Case Studies</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-ghost btn-sm">Watch Demo</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Request a Demo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<header class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">AI/ML Decision Intelligence for Mineral Exploration</p>
+      <h1>Turn Multi-Physics Earth Data Into <em>Ranked Drilling Targets</em></h1>
+      <p class="lede">SpectraXplore™ is an advanced AI/ML-based remote sensing decision intelligence platform — fusing hyperspectral analysis, 3D gravity, EM &amp; magnetic inversion, and deep learning (multiscale GCN, CNN, Bi-CLSTM) with unsupervised, semi-supervised and Bayesian modelling to discover mineral deposits, not just map pixels.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Request a Demo</a>
+        <a href="#ai-engine" class="btn btn-ghost">Explore the AI/ML Engine</a>
+        <a href="#action" class="btn btn-ghost">Watch 2-Min Demo ▸</a>
+      </div>
+      <div class="hero-meta">
+        <span>Remote Sensing · 3D Gravity · EM · Magnetic Inversion</span>
+        <span>Multiscale GCN · CNN · Bi-CLSTM</span>
+        <span>WofE &amp; Bayesian Prospectivity</span>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <div class="app-window">
+        <div class="app-titlebar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="label">SpectraXplore™ — Alteration Mapping / Hydrothermal Index + Potassium</span>
+        </div>
+        <img src="./assets/hero-app.jpg" alt="SpectraXplore software showing a hydrothermal alteration index layered over a potassium raster with coordinate grid" loading="eager">
+      </div>
+      <div class="reticle tl" aria-hidden="true"></div>
+      <div class="reticle br" aria-hidden="true"></div>
+      <div class="hero-tag">
+        <span class="ramp-rule" aria-hidden="true"></span>
+        Live classification stretch
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     WORKFLOW STRIP
+     ========================================================= -->
+<section class="workflow" id="workflow">
+  <div class="wrap">
+    <div class="workflow-head reveal">
+      <div>
+        <p class="eyebrow">The Pipeline</p>
+        <h2>From Raw Earth Data to AI-Ranked Exploration Intelligence</h2>
+      </div>
+      <p class="lede" style="max-width:340px;">One continuous, model-driven workflow — no exporting between five different tools to get from raw satellite and geophysical data to a ranked drill target.</p>
+    </div>
+    <div class="flow reveal">
+      <div class="flow-step">
+        <div class="flow-node">01</div>
+        <div class="flow-label">Multi-Sensor Data</div>
+        <div class="flow-sub">SENTINEL·ASTER·DEM</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-node">02</div>
+        <div class="flow-label">Preprocessing</div>
+        <div class="flow-sub">CORRECTION·STACK</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-node">03</div>
+        <div class="flow-label">Spectral Analysis</div>
+        <div class="flow-sub">SAM·HSI·INDICES</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-node">04</div>
+        <div class="flow-label">3D Geophysical Inversion</div>
+        <div class="flow-sub">GRAVITY·EM·MAGNETIC</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-node">05</div>
+        <div class="flow-label">DEM &amp; Structure</div>
+        <div class="flow-sub">LINEAMENTS</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-node">06</div>
+        <div class="flow-label">AI/ML Modelling</div>
+        <div class="flow-sub">PCA·GCN·CNN·Bi-CLSTM</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-node">07</div>
+        <div class="flow-label">Prospectivity</div>
+        <div class="flow-sub">WofE·BAYESIAN·GCN</div>
+      </div>
+    </div>
+    <p class="flow-final reveal">Output → <strong>AI-ranked, defensible drilling targets</strong></p>
+  </div>
+</section>
+
+<!-- =========================================================
+     FEATURES
+     ========================================================= -->
+<section class="features" id="platform">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" style="justify-content:center;">Platform</p>
+      <h2>Nine Disciplines. One AI/ML Workspace.</h2>
+      <p class="lede" style="margin:14px auto 0;">Everything an exploration geologist and data scientist currently stitches together across separate satellite, geophysics, GIS and machine-learning tools — built to work as a single decision-intelligence pipeline.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card f-1 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+        </div>
+        <h3>Multi-Sensor Remote Sensing</h3>
+        <p>Access and process high-quality satellite and terrain datasets — the raw evidence layer for every downstream model.</p>
+        <div class="tag-row"><span class="tag">Sentinel-2</span><span class="tag">ASTER</span><span class="tag">Landsat</span><span class="tag">DEM</span></div>
+      </div>
+
+      <div class="feature-card f-2 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6L4 18a2 2 0 0 0 1.8 3h12.4A2 2 0 0 0 20 18l-5-9V3"/><path d="M8.5 3h7"/><path d="M6 14h12"/></svg>
+        </div>
+        <h3>Deposit &amp; Alteration Spectral Mapping</h3>
+        <p>A production workflow — not a one-off map — for generating deposit-specific mineral spectral maps, alteration-specific spectral maps, and sub-pixel rock/mineral mixture (spectral unmixing) maps at scale.</p>
+        <div class="tag-row"><span class="tag">SAM</span><span class="tag">Spectral unmixing</span><span class="tag">Deposit models</span></div>
+      </div>
+
+      <div class="feature-card f-3 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18 5 5 0 0 1 0-10 3 3 0 0 0 0-6"/></svg>
+        </div>
+        <h3>Alteration Mapping</h3>
+        <p>Map the exploration indicators that matter: iron oxides, hydrothermal alteration, clays, silica, and carbonates.</p>
+        <div class="tag-row"><span class="tag">Iron oxide</span><span class="tag">Argillic</span><span class="tag">Propylitic</span></div>
+      </div>
+
+      <div class="feature-card f-4 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18 8 8l4 6 3-4 6 8"/><path d="M3 21h18"/></svg>
+        </div>
+        <h3>DEM &amp; Structural Analysis</h3>
+        <p>Turn terrain into geological evidence: elevation, slope, aspect, and automatic lineament &amp; density extraction.</p>
+        <div class="tag-row"><span class="tag">Slope/Aspect</span><span class="tag">Lineaments</span><span class="tag">Density</span></div>
+      </div>
+
+      <div class="feature-card f-5 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"/><rect x="3" y="10.5" width="18" height="5" rx="1"/><rect x="3" y="17" width="18" height="4" rx="1"/></svg>
+        </div>
+        <h3>Multi-Physics Geophysical Inversion</h3>
+        <p>Build 3D gravity, electromagnetic (EM) and magnetic inversion models and fuse them with surface and spectral evidence.</p>
+        <div class="tag-row"><span class="tag">3D Gravity</span><span class="tag">EM Inversion</span><span class="tag">Magnetic Inversion</span></div>
+      </div>
+
+      <div class="feature-card f-6 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2"/><circle cx="17" cy="6" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="15" r="2"/><circle cx="6" cy="17" r="1.6"/></svg>
+        </div>
+        <h3>Unsupervised &amp; Statistical Learning</h3>
+        <p>Extract hidden structure from multi-source datasets with PCA, factor analysis, cluster analysis, and advanced LDA / topic models.</p>
+        <div class="tag-row"><span class="tag">PCA</span><span class="tag">Factor</span><span class="tag">Cluster</span><span class="tag">LDA / Topic models</span></div>
+      </div>
+
+      <div class="feature-card f-7 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="1.8"/><circle cx="5" cy="18" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="6" r="1.8"/><circle cx="19" cy="18" r="1.8"/><path d="M6.5 7 10.5 11M6.5 17 10.5 13M13.5 11 17.5 7M13.5 13 17.5 17"/></svg>
+        </div>
+        <h3>Deep Learning &amp; Computer Vision</h3>
+        <p>Train multiscale Graph Convolutional Networks (GCN), CNNs, and Bi-CLSTM spectral-spatial models for hyperspectral image classification, using known mineral occurrences as ground truth.</p>
+        <div class="tag-row"><span class="tag">Multiscale GCN</span><span class="tag">CNN</span><span class="tag">Bi-CLSTM</span></div>
+      </div>
+
+      <div class="feature-card f-8 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M11 19V4m7 15v-7"/><circle cx="4" cy="7" r="1.6" fill="currentColor" stroke="none"/><circle cx="11" cy="3" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="10" r="1.6" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>Semi-Supervised Regression Models</h3>
+        <p>Calibrate regression and probability-surface models against sparse known occurrences and assay data to fill gaps across data-poor terrain.</p>
+        <div class="tag-row"><span class="tag">Semi-supervised</span><span class="tag">Known occurrences</span><span class="tag">Probability surfaces</span></div>
+      </div>
+
+      <div class="feature-card f-9 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"/><path d="M12 3v2.4M12 18.6V21M3 12h2.4M18.6 12H21"/></svg>
+        </div>
+        <h3>AI-Ranked Prospectivity</h3>
+        <p>Fuse geological evidence into ranked, defensible exploration targets with Weight of Evidence, Bayesian networks, and multiscale GCN prospectivity scoring.</p>
+        <div class="tag-row"><span class="tag">WofE</span><span class="tag">Bayesian</span><span class="tag">GCN scoring</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     MINERAL LIBRARY
+     ========================================================= -->
+<section class="alt-section tint" id="library">
+  <div class="wrap">
+    <div class="split reverse">
+      <div class="split-media reveal">
+        <div class="lib-mock">
+          <div class="lib-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="text" placeholder="Search mineral, material or vegetation target…" disabled>
+          </div>
+          <div class="lib-body">
+            <div class="lib-list">
+              <div class="lib-item active" data-name="Chlorite" data-meta="Phyllosilicate — propylitic alteration indicator"><span><span class="swatch" style="background:#0BA793"></span>Chlorite</span><small>SAM 0.11</small></div>
+              <div class="lib-item" data-name="Kaolinite" data-meta="Clay mineral — advanced argillic alteration"><span><span class="swatch" style="background:#F2A020"></span>Kaolinite</span><small>SAM 0.09</small></div>
+              <div class="lib-item" data-name="Illite" data-meta="Clay mineral — intermediate argillic alteration"><span><span class="swatch" style="background:#E9DA34"></span>Illite</span><small>SAM 0.14</small></div>
+              <div class="lib-item" data-name="Alunite" data-meta="Sulfate — high-sulfidation epithermal indicator"><span><span class="swatch" style="background:#E31C82"></span>Alunite</span><small>SAM 0.07</small></div>
+              <div class="lib-item" data-name="Hematite" data-meta="Iron oxide — supergene / gossan indicator"><span><span class="swatch" style="background:#EF4B3C"></span>Hematite</span><small>SAM 0.08</small></div>
+              <div class="lib-item" data-name="Goethite" data-meta="Iron oxide — oxidised sulphide indicator"><span><span class="swatch" style="background:#F2A81D"></span>Goethite</span><small>SAM 0.12</small></div>
+              <div class="lib-item" data-name="Muscovite" data-meta="Mica — phyllic (sericitic) alteration"><span><span class="swatch" style="background:#2FD1B6"></span>Muscovite</span><small>SAM 0.16</small></div>
+              <div class="lib-item" data-name="Pyrite" data-meta="Sulphide — weathering / oxidation proxy"><span><span class="swatch" style="background:#1B3BD6"></span>Pyrite</span><small>SAM 0.19</small></div>
+            </div>
+            <div class="lib-detail">
+              <img src="./assets/chlorite-sam.jpg" alt="Chlorite spectral angle mapper similarity heatmap and contour map" loading="lazy">
+              <h4 data-lib-name>Chlorite</h4>
+              <p data-lib-meta>Phyllosilicate — propylitic alteration indicator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Spectral Mapping Workflow</p>
+        <h2>A Production Workflow, Not a One-Off Map</h2>
+        <p class="lede">SpectraXplore™ is built around a repeatable spectral-mapping workflow — matched against imagery with Spectral Angle Mapper and spectral unmixing — that generates deposit-specific mineral spectral maps, alteration-specific spectral maps, and rock/mineral mixture maps directly from a searchable reference library spanning minerals, alteration products, materials and vegetation.</p>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Deposit-model-driven mineral spectral maps, tuned to the alteration assemblage you're targeting</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Alteration-specific spectral maps and sub-pixel rock/mineral mixture maps via spectral unmixing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Per-pixel similarity scoring with SAM heatmaps, contour visualisation and reference spectra for rapid QA/QC</li>
+        </ul>
+        <a href="#action" class="btn btn-ghost">See Mineral Mapping In Action ▸</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     DEM / STRUCTURAL
+     ========================================================= -->
+<section class="alt-section" id="dem">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-copy reveal">
+        <p class="eyebrow">Terrain &amp; Structure</p>
+        <h2>Reveal the Structural Framework</h2>
+        <p class="lede">Terrain is more than elevation. SpectraXplore™ transforms DEM data into structural and geomorphological evidence — slope, ruggedness, hillshade, and automatically extracted lineaments — ready to feed directly into your prospectivity model.</p>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Slope, aspect, curvature, TRI and multi-directional hillshade derivatives</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Automatic lineament extraction with density &amp; proximity grids</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Structural-corridor intersection density for target vectoring</li>
+        </ul>
+        <a href="#action" class="btn btn-ghost">Watch the DEM Toolbox ▸</a>
+      </div>
+      <div class="split-media reveal">
+        <div class="mosaic">
+          <div class="m-big frame-card">
+            <img src="./assets/dem-app.jpg" alt="SpectraXplore layer panel showing fifteen DEM derivative products including slope, curvature, TRI, hillshade and lineament density" loading="lazy">
+            <div class="cap"><span><span class="dot"></span>15 DEM derivative layers</span><span>UTM grid</span></div>
+          </div>
+          <div class="frame-card">
+            <img src="./assets/dem-slope.jpg" alt="Classified slope raster derived from a digital elevation model" loading="lazy">
+          </div>
+          <div class="frame-card">
+            <img src="./assets/lineament-density.jpg" alt="Lineament density heatmap highlighting structural corridors" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:34px;" class="frame-card reveal">
+      <img src="./assets/structural-summary.jpg" alt="Structural summary panel showing hillshade with extracted lineaments, slope, terrain ruggedness index, lineament density, lineament proximity and intersection density" loading="lazy">
+      <div class="cap"><span><span class="dot"></span>Structural Summary Panel — six coincident terrain products</span><span>structural_summary.tif</span></div>
+    </div>
+
+    <div class="video-frame reveal" style="margin-top:34px;">
+      <video controls preload="none" poster="./assets/dem-toolbox-poster.jpg" playsinline>
+        <source src="./assets/dem-toolbox-demo.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="./assets/dem-toolbox-demo.mp4">Download the demo</a>.
+      </video>
+      <div class="cap"><span><span class="dot"></span>DEM Analysis Toolbox — from raw elevation to lineament density</span><span>3:17</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     ALTERATION MAPPING
+     ========================================================= -->
+<section class="alt-section tint" id="alteration">
+  <div class="wrap">
+    <div class="split reverse">
+      <div class="split-media reveal">
+        <div class="compare-row">
+          <div class="frame-card">
+            <img src="./assets/argilic-alteration.jpg" alt="Argillic alteration index derived from Sentinel-2 imagery over a mine site" loading="lazy">
+            <div class="cap"><span><span class="dot"></span>Argillic Index</span><span>S2C_T11TNF</span></div>
+          </div>
+          <div class="frame-card">
+            <img src="./assets/iron-oxide-alteration.jpg" alt="Iron oxide ratio index derived from Sentinel-2 imagery over the same scene" loading="lazy">
+            <div class="cap"><span><span class="dot"></span>Iron Oxide Ratio</span><span>S2C_T11TNF</span></div>
+          </div>
+        </div>
+        <div class="frame-card" style="margin-top:18px;">
+          <img src="./assets/bandmath-app.jpg" alt="Band Math dialog in SpectraXplore for computing custom mineral and vegetation indices from Sentinel-2 band aliases" loading="lazy">
+          <div class="cap"><span><span class="dot"></span>Compute custom indices from any sensor's band layout</span><span>Band Math</span></div>
+        </div>
+      </div>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Alteration Mapping</p>
+        <h2>See the Footprint Before You Fly a Crew</h2>
+        <p class="lede">Map the diagnostic indicators exploration teams look for first — iron oxides, hydrothermal and argillic alteration, silica/quartz and carbonates — straight from freely available Sentinel-2 and ASTER scenes.</p>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Preset indices — Silica, Mafic, Hydrothermal Alteration, NDVI, NDWI, NDSI</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Custom band-math expressions mapped to any sensor's band aliases</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Side-by-side, synchronised windows for rapid comparison across indices</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Request a Demo ▸</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     AI / ML ENGINE
+     ========================================================= -->
+<section class="alt-section tint" id="ai-engine">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" style="justify-content:center;">The AI/ML Engine</p>
+      <h2>Deep Learning Built for Geological Topology — Not Generic Pixels</h2>
+      <p class="lede" style="margin:14px auto 0;">SpectraXplore™ is a decision-intelligence engine, not a single algorithm. Raw remote-sensing, geophysical and geological inputs are fused through a feature-fusion and data-reconstruction pipeline, then scored by SpectraXplore's own prospectivity model to output a ranked, spatially explicit prospectivity surface.</p>
+    </div>
+
+    <div class="frame-card reveal">
+      <img src="./assets/ai-deep-learning-architecture.jpg" alt="SpectraXplore deep learning model architecture diagram showing the input data module, feature fusion module with multi-source data fusion convolution and position embedding, data reconstruction module, and prospectivity score calculation module producing a mineral prospectivity map" loading="lazy">
+      <div class="cap"><span><span class="dot"></span>SpectraXplore™ deep learning model — input fusion → data reconstruction → prospectivity scoring</span><span>Multi-source input</span></div>
+    </div>
+
+    <div class="split reverse" style="margin-top:56px;">
+      <div class="split-media reveal">
+        <div class="frame-card">
+          <img src="./assets/multiscale-gcn-infographic.jpg" alt="Infographic comparing the limitations of CNNs and standard GCNs against SpectraXplore's multiscale Graph Convolutional Network for mineral prospectivity mapping, showing regional faults, local geochemistry, drillhole and structural layers fused hierarchically" loading="lazy">
+        </div>
+      </div>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Why Multiscale GCN</p>
+        <h2>Beyond CNNs and Standard Graph Networks</h2>
+        <p class="lede">Conventional CNNs struggle with the irregular geometry and complex topological relationships found in real mineral systems, and standard Graph Convolutional Networks have limited capacity to capture features across scales — leaving datasets siloed, receptive fields fixed, and information lost between layers. SpectraXplore's multiscale GCN was purpose-built for mineral prospectivity mapping to close that gap.</p>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><strong>Hierarchical feature learning</strong> — from regional faults down to deposit-scale geochemistry</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><strong>Geological topology awareness</strong> — models the complex relationships within a mineral system rather than a flat pixel grid</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><strong>Integration of heterogeneous data</strong> — geophysical, geochemical, remote-sensing and geological evidence on one graph</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><strong>Robust in data-sparse environments</strong> — where fixed-grid CNNs and single-scale GCNs typically fall short</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="model-note reveal" style="margin-top:44px;">
+      <div class="model-note-label">// COMPUTER VISION MODEL — BI-CLSTM FOR HYPERSPECTRAL IMAGERY</div>
+      <p>Alongside multiscale GCN, SpectraXplore™ can build a Bidirectional-Convolutional LSTM (Bi-CLSTM) network for spectral-spatial feature learning on hyperspectral imagery. Spectral feature extraction across a scene's many narrow bands is treated as a sequence-learning problem, using a recurrent connection across the spectral domain, run in both directions to capture the full spectral context — while a convolutional operator across the spatial domain extracts spatial structure, in the same spirit as a CNN. The two feature sets are concatenated and passed to a classifier, giving stronger classification performance on hyperspectral scenes than CNN-only approaches.</p>
+    </div>
+
+    <div class="feature-grid" style="margin-top:44px;">
+      <div class="feature-card f-6 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2"/><circle cx="17" cy="6" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="15" r="2"/><circle cx="6" cy="17" r="1.6"/></svg>
+        </div>
+        <h3>Unsupervised Modelling</h3>
+        <p>PCA, factor analysis, cluster analysis and advanced LDA / topic models to uncover hidden structure in unlabelled, multi-source datasets.</p>
+        <div class="tag-row"><span class="tag">PCA</span><span class="tag">Factor</span><span class="tag">Cluster</span><span class="tag">LDA / Topic</span></div>
+      </div>
+      <div class="feature-card f-8 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M11 19V4m7 15v-7"/><circle cx="4" cy="7" r="1.6" fill="currentColor" stroke="none"/><circle cx="11" cy="3" r="1.6" fill="currentColor" stroke="none"/><circle cx="18" cy="10" r="1.6" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>Semi-Supervised Regression</h3>
+        <p>Regression models calibrated against sparse known occurrences and assay data to extend coverage across data-poor terrain.</p>
+        <div class="tag-row"><span class="tag">Semi-supervised</span><span class="tag">Known occurrences</span></div>
+      </div>
+      <div class="feature-card f-7 reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="1.8"/><circle cx="5" cy="18" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="6" r="1.8"/><circle cx="19" cy="18" r="1.8"/><path d="M6.5 7 10.5 11M6.5 17 10.5 13M13.5 11 17.5 7M13.5 13 17.5 17"/></svg>
+        </div>
+        <h3>Computer Vision Models</h3>
+        <p>Multiscale GCN, CNN and Bi-CLSTM classifiers, trained with known mineral occurrences as ground truth.</p>
+        <div class="tag-row"><span class="tag">Multiscale GCN</span><span class="tag">CNN</span><span class="tag">Bi-CLSTM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     INTEGRATED EXPLORATION DIAGRAM
+     ========================================================= -->
+<section class="integrate">
+  <div class="wrap integrate-inner">
+    <div class="reveal">
+      <p class="eyebrow">Integrated Exploration</p>
+      <h2>One Platform. Every Exploration Dataset.</h2>
+      <p class="lede">Bring remote sensing, multi-physics geophysical inversion and geochemistry into a single evidence graph — then let multiscale GCN, Weight of Evidence and Bayesian modelling do the ranking.</p>
+    </div>
+
+    <div class="diagram reveal">
+      <div class="d-row">
+        <div class="d-card">
+          <h4>Remote Sensing</h4>
+          <ul><li>Sentinel-2</li><li>ASTER</li><li>Landsat</li><li>DEM</li></ul>
+        </div>
+        <div class="d-card">
+          <h4>Multi-Physics Geophysics</h4>
+          <ul><li>3D Gravity Inversion</li><li>EM Inversion</li><li>Magnetic Inversion</li><li>Radiometrics</li></ul>
+        </div>
+        <div class="d-card">
+          <h4>Geochemistry</h4>
+          <ul><li>Au</li><li>Cu</li><li>Ag</li><li>As</li></ul>
+        </div>
+      </div>
+      <div class="d-final">
+        <div class="d-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+        <div class="d-pill mid">Evidence Integration</div>
+        <div class="d-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+        <div class="d-pill mid">Multiscale GCN / Bayesian / Weight of Evidence</div>
+        <div class="d-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+        <div class="d-pill final">Prospectivity Map → Drilling Targets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     ACTION / VIDEO / CASE STUDY
+     ========================================================= -->
+<section class="action" id="action">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">SpectraXplore™ In Action</p>
+      <h2>See the Full Workflow, Not Just a Feature List</h2>
+    </div>
+
+    <div class="action-grid">
+      <div class="reveal">
+        <div class="video-frame">
+          <video controls preload="none" poster="./assets/spectraxplore-poster.jpg" playsinline>
+            <source src="./assets/spectraxplore-demo.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="./assets/spectraxplore-demo.mp4">Download the demo</a>.
+          </video>
+          <div class="cap"><span><span class="dot"></span>Product walkthrough — full platform tour</span><span>6:31</span></div>
+        </div>
+      </div>
+
+      <div class="case-list reveal">
+        <div class="case-item">
+          <div class="case-num">01</div>
+          <div><h4>Load &amp; correct multi-sensor imagery</h4><p>Bring in Sentinel-2, ASTER and DEM data, stack bands and pan-sharpen in a few clicks.</p></div>
+        </div>
+        <div class="case-item">
+          <div class="case-num">02</div>
+          <div><h4>Compute alteration &amp; mineral indices</h4><p>Run preset or custom band-math expressions, then match against the spectral library with SAM.</p></div>
+        </div>
+        <div class="case-item">
+          <div class="case-num">03</div>
+          <div><h4>Derive structure from terrain</h4><p>Generate slope, hillshade and lineament products, and quantify structural corridor density.</p></div>
+        </div>
+        <div class="case-item">
+          <div class="case-num">04</div>
+          <div><h4>Rank targets with GCN, WofE &amp; Bayesian models</h4><p>Fuse remote sensing, multi-physics inversion and geochemistry evidence into one AI-ranked prospectivity surface.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nevada case study -->
+    <div class="case-study">
+      <div class="case-study-head reveal">
+        <div>
+          <p class="eyebrow">Field Case Study</p>
+          <h2>Nevada Gold District — Alteration to 3D Target</h2>
+        </div>
+        <p class="lede" style="max-width:360px;">A worked example: known-deposit imagery is processed, draped over terrain, and cross-checked against mineral occurrence records.</p>
+      </div>
+
+      <div class="case-media reveal">
+        <div class="frame-card">
+          <img src="./assets/case-2d.jpg" alt="SpectraXplore layer panel showing quartz, hydrothermal and clay alteration indices draped over a Nevada mine site" loading="lazy">
+          <div class="cap"><span><span class="dot"></span>Quartz + Hydrothermal + Clay composite</span><span>2D viewport</span></div>
+        </div>
+        <div class="frame-card">
+          <img src="./assets/case-3d.jpg" alt="Alteration raster draped in 3D over terrain in Google Earth, with mine, closed mine and prospect occurrence markers" loading="lazy">
+          <div class="cap"><span><span class="dot"></span>3D terrain drape with occurrence markers</span><span>Mine · Closed · Prospect</span></div>
+        </div>
+      </div>
+
+      <div class="video-frame reveal" style="margin-bottom:26px;">
+        <video controls preload="none" poster="./assets/nevada-gold-poster.jpg" playsinline>
+          <source src="./assets/nevada-gold-demo.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="./assets/nevada-gold-demo.mp4">Download the demo</a>.
+        </video>
+        <div class="cap"><span><span class="dot"></span>Nevada case study — from raster stack to 3D drape</span><span>3:14</span></div>
+      </div>
+
+      <div class="case-callouts reveal">
+        <div class="callout"><b data-count="3" data-suffix="">0</b><span>Coincident alteration indices modelled in the same session</span></div>
+        <div class="callout"><b data-count="1985" data-suffix="">0</b><span>Elevation-referenced 3D drape, correlated against known mineral occurrences</span></div>
+        <div class="callout"><b data-count="100" data-suffix="%">0%</b><span>Built on open Sentinel-2 imagery — no proprietary tasking required</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     GALLERY
+     ========================================================= -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" style="justify-content:center;">Inside SpectraXplore™</p>
+      <h2>Built for the Screens Geologists Actually Live In</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="g-item wide tall">
+        <img src="./assets/hero-app.jpg" alt="Hydrothermal alteration index with potassium overlay">
+        <div class="g-label">Alteration Mapping — Hydrothermal + K</div>
+      </div>
+      <div class="g-item">
+        <img src="./assets/bandmath-app.jpg" alt="Band Math custom index dialog">
+        <div class="g-label">Band Math</div>
+      </div>
+      <div class="g-item">
+        <img src="./assets/dem-app.jpg" alt="DEM derivative layer stack">
+        <div class="g-label">DEM Toolbox</div>
+      </div>
+      <div class="g-item">
+        <img src="./assets/case-2d.jpg" alt="Alteration composite over a mine site">
+        <div class="g-label">Mine-Site Alteration</div>
+      </div>
+      <div class="g-item">
+        <img src="./assets/case-3d.jpg" alt="3D terrain drape with occurrence markers">
+        <div class="g-label">3D Terrain Drape</div>
+      </div>
+      <div class="g-item">
+        <img src="./assets/structural-summary.jpg" alt="Structural summary panel">
+        <div class="g-label">Structural Summary</div>
+      </div>
+      <div class="g-item">
+        <img src="./assets/chlorite-sam.jpg" alt="Chlorite SAM heatmap and contour map">
+        <div class="g-label">Spectral Angle Mapper</div>
+      </div>
+      <div class="g-item">
+        <img src="./assets/iron-oxide-ratio.jpg" alt="Iron oxide ratio classified raster">
+        <div class="g-label">Iron Oxide Ratio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <img src="" alt="">
+  <div class="lb-cap"></div>
+</div>
+
+<!-- =========================================================
+     WHY SPECTRAXPLORE
+     ========================================================= -->
+<section class="compare">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" style="justify-content:center;">Why SpectraXplore™</p>
+      <h2>One AI/ML Decision Intelligence Platform Instead of Five Tools</h2>
+      <p class="lede" style="margin:14px auto 0;">We're not claiming any single competitor lacks these capabilities individually — SpectraXplore's difference is having all of them, integrated with a deep-learning core, in one exploration workflow.</p>
+    </div>
+
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Capability</th>
+            <th>Generic GIS</th>
+            <th>Remote Sensing Software</th>
+            <th class="hl">SpectraXplore™</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Sentinel-2 / ASTER access</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Mineral mapping</td><td><span class="ltd">Limited</span></td><td><span class="yes">✓</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Deposit &amp; alteration-specific spectral map workflow</td><td><span class="no">—</span></td><td><span class="ltd">Limited</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Rock / mineral mixture (unmixing) maps</td><td><span class="no">—</span></td><td><span class="ltd">Limited</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Alteration mapping</td><td><span class="ltd">Limited</span></td><td><span class="yes">✓</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>DEM analysis</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Lineament density</td><td><span class="ltd">Manual / add-on</span></td><td><span class="yes">✓</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>3D gravity / EM / magnetic inversion</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Unsupervised learning (PCA, factor, cluster, LDA/topic)</td><td><span class="ltd">Limited</span></td><td><span class="ltd">Limited</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Semi-supervised regression modelling</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Deep learning (multiscale GCN, CNN, Bi-CLSTM)</td><td><span class="no">—</span></td><td><span class="no">—</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Weight of Evidence</td><td><span class="no">—</span></td><td><span class="ltd">Limited</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Bayesian prospectivity</td><td><span class="no">—</span></td><td><span class="ltd">Limited</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Geochemistry integration</td><td><span class="ltd">Limited</span></td><td><span class="ltd">Limited</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+          <tr><td>Integrated, AI-ranked prospectivity map</td><td><span class="no">—</span></td><td><span class="ltd">Limited</span></td><td class="hl"><span class="yes">✓</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note reveal">Positioning reflects SpectraXplore's own feature set, not audited claims about any named competitor's product.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     PRICING
+     ========================================================= -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" style="justify-content:center;">Pricing</p>
+      <h2>Plans for Every Stage of Exploration</h2>
+      <p class="lede" style="margin:14px auto 0;">Annual licensing, scoped to how you work. Talk to us if you need a custom multi-seat or data-heavy deployment.</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="price-card reveal">
+        <div class="price-name">Explorer</div>
+        <div class="price-amount">$2,500 <span>/ year</span></div>
+        <p class="price-desc">For individual exploration professionals.</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Sentinel-2 / ASTER / DEM processing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Core alteration &amp; mineral indices</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Spectral library search (single seat)</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-block">Request a Demo</a>
+      </div>
+
+      <div class="price-card featured reveal">
+        <div class="price-name">Professional</div>
+        <div class="price-amount">$7,500 <span>/ year</span></div>
+        <p class="price-desc">For consultants and small exploration teams.</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Everything in Explorer</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>DEM &amp; structural analysis suite</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Unsupervised learning — PCA, factor, cluster &amp; LDA/topic models</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Up to 3 seats</li>
+        </ul>
+        <a href="#contact" class="btn btn-accent btn-block">Request a Demo</a>
+      </div>
+
+      <div class="price-card reveal">
+        <div class="price-name">Advanced</div>
+        <div class="price-amount">$12,500 <span>/ year</span></div>
+        <p class="price-desc">For mining and exploration companies.</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Everything in Professional</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Multiscale GCN, CNN &amp; Bi-CLSTM deep learning models</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>3D gravity / EM / magnetic inversion, WofE &amp; Bayesian modelling</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Geochemistry &amp; geophysics integration</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Up to 10 seats</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-block">Request a Demo</a>
+      </div>
+
+      <div class="price-card reveal">
+        <div class="price-name">Enterprise</div>
+        <div class="price-amount">Custom</div>
+        <p class="price-desc">For multi-user deployments &amp; custom workflows.</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Everything in Advanced</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Unlimited seats &amp; site licensing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Custom data &amp; workflow integration</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Dedicated onboarding</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-block">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT / REQUEST DEMO
+     ========================================================= -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Request a Demo</p>
+      <h2>Let's Look at Your Ground Together</h2>
+    </div>
+
+    <div class="contact-grid reveal">
+      <!-- Left: info -->
+      <div class="contact-info">
+        <h3>Let's Discuss Your Project</h3>
+        <p>Whether you're planning a first-pass regional screen, evaluating SpectraXplore™ against a known deposit, or seeking a license for an active exploration program — our team is composed of practising exploration geologists who understand your problem.</p>
+        <p>We respond to all qualified enquiries within one business day. For urgent project support, please indicate your target start date in your message.</p>
+
+        <div class="contact-points">What to include:</div>
+        <ul class="contact-point-list">
+          <li>Target commodity and project location</li>
+          <li>Approximate study area and available data (Sentinel-2, ASTER, DEM, geochem, geophysics)</li>
+          <li>Whether you need remote sensing, multi-physics inversion, DEM/structural, AI/ML modelling or prospectivity ranking — or all of the above</li>
+          <li>Your preferred license tier and project timeline</li>
+          <li>Any coincident datasets you'd like to integrate (geochemistry, geophysics, drillhole data)</li>
+        </ul>
+
+        <div class="contact-detail">
+          <div class="contact-detail-item">
+            <span>📧</span>
+            <span>Sales: <strong>sales@spectraxplore.com</strong></span>
+          </div>
+          <div class="contact-detail-item">
+            <span>🛰️</span>
+            <span>Technical: <strong>science@spectraxplore.com</strong></span>
+          </div>
+          <div class="contact-detail-item">
+            <span>📋</span>
+            <span>Licensing: <strong>licensing@spectraxplore.com</strong></span>
+          </div>
+        </div>
+
+        <div class="contact-note">
+          <div class="contact-note-label">// NOTE ON PRICING</div>
+          <p>Listed prices are a starting guide. Final license pricing is confirmed project-by-project based on study area, data volume, seat count and support requirements — contact sales to scope your program.</p>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <form class="contact-form" action="https://formspree.io/f/xpqnevle" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c_name">Full Name *</label>
+            <input type="text" id="c_name" name="name" required placeholder="Dr. Jane Smith">
+          </div>
+          <div class="form-group">
+            <label for="c_email">Email Address *</label>
+            <input type="email" id="c_email" name="email" required placeholder="jane@exploreco.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c_company">Company / Institution *</label>
+            <input type="text" id="c_company" name="company" required placeholder="Acme Exploration Pty Ltd">
+          </div>
+          <div class="form-group">
+            <label for="c_role">Role / Title</label>
+            <input type="text" id="c_role" name="role" placeholder="Chief Geologist">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c_project_type">Target Commodity *</label>
+            <select id="c_project_type" name="project_type" required>
+              <option value="">Select target type…</option>
+              <option>Gold / Epithermal &amp; Porphyry Systems</option>
+              <option>Base Metals — VMS / SEDEX / Skarn</option>
+              <option>Iron Oxide Copper-Gold (IOCG)</option>
+              <option>Nickel / Ni-Cu-PGE</option>
+              <option>Lithium / Battery Metals</option>
+              <option>Uranium</option>
+              <option>Regional Reconnaissance / Greenfields</option>
+              <option>Academic / Research</option>
+              <option>Government Geological Survey</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c_license_tier">License Tier Interest</label>
+            <select id="c_license_tier" name="license_tier">
+              <option value="">Select tier…</option>
+              <option>Explorer — Individual</option>
+              <option>Professional — Small Team</option>
+              <option>Advanced — Exploration Company</option>
+              <option>Enterprise — Custom Deployment</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="c_message">Project Description *</label>
+          <textarea id="c_message" name="message" rows="5" required placeholder="Briefly describe your study area, data volume, target commodity, and any existing complementary datasets (geochemistry, geophysics, drillhole, etc.)…"></textarea>
+        </div>
+        <input type="hidden" name="_replyto" value="sales@spectraxplore.com">
+        <input type="hidden" name="_subject" value="SpectraXplore™ Demo Request">
+        <button type="submit" class="form-submit">Send to Sales Team →</button>
+        <div class="form-success" id="formSuccess">✓ Message sent — we'll be in touch within one business day.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="./assets/logo-full.png" alt="SpectraXplore™ — Explore Smarter, Discover More">
+        <p>An advanced AI/ML-based remote sensing decision intelligence platform for mineral exploration — fusing multi-physics geophysics, hyperspectral analysis and deep learning into ranked drilling targets.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Platform</h5>
+        <ul>
+          <li><a href="#platform">Features</a></li>
+          <li><a href="#ai-engine">AI/ML Engine</a></li>
+          <li><a href="#library">Mineral Library</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#dem">DEM &amp; Structure</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#action">Case Studies</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:sales@spectraxplore.com">sales@spectraxplore.com</a></li>
+          <li><a href="mailto:science@spectraxplore.com">science@spectraxplore.com</a></li>
+          <li><a href="mailto:licensing@spectraxplore.com">licensing@spectraxplore.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> SpectraXplore™. All rights reserved.</span>
+      <span>From Multi-Physics Data to AI-Ranked Drilling Targets.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
